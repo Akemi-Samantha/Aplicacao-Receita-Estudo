@@ -6,8 +6,6 @@ F
 ä
 ZCadastroPratos/src/main/java/Projeto/CadastroPratos/model/entitie/CadastroPratoEntity.java,8\2\82b7063242b2e3888c083452254af4aed78c9bda
 å
-\CadastroPratos/src/main/java/Projeto/CadastroPratos/controller/CadastroPratosController.java,6\1\6152bdbe3061bb19852cb451130d4698de830cc3
-å
 \CadastroPratos/src/main/java/Projeto/CadastroPratos/model/request/CadastroPratosRequest.java,2\f\2f1c1c04f00692fa63343471f833793ebc471199
 Ñ
 TCadastroPratos/src/main/java/Projeto/CadastroPratos/model/dto/CadastroPratosDto.java,6\c\6c3d9386db9bde9abe57a15aa1dfb732ee1670f6
@@ -23,8 +21,6 @@ MCadastroPratos/src/main/java/Projeto/CadastroPratos/model/dto/RetornoDto.java,
 aCadastroPratos/src/main/java/Projeto/CadastroPratos/model/repository/CadastroPratoRepository.java,e\0\e0ad32a5fd5233e7e13baccf91dba625d361593b
 Å
 Q.idea/sonarlint/securityhotspotstore/8/a/8a1eb6733941868618f4377368cdb3f05e909eee,2\6\2696ba027ec05bbc613ccaa74fef3c421ffe29db
-ï
-eCadastroPratos/src/main/java/Projeto/CadastroPratos/model/response/CadastroRetornoPratosResponse.java,9\a\9a5442d260d0bc18cf04394dc8b6272e254654ef
 Å
 Q.idea/sonarlint/securityhotspotstore/7/7/77da9419e05a691e7c8f7237f45d1b92255c28bd,a\0\a07b6be21bc72602253bb1e4efdebd8a65be67b7
 Å
@@ -38,8 +34,10 @@ Q.idea/sonarlint/securityhotspotstore/0/0/002dcb0a4cff43dd512e942c4b1d335884390f
 Å
 Q.idea/sonarlint/securityhotspotstore/2/f/2f1c1c04f00692fa63343471f833793ebc471199,c\b\cb9475c13360531595dae7a3fe69ad6c9154991b
 Å
-Q.idea/sonarlint/securityhotspotstore/6/1/6152bdbe3061bb19852cb451130d4698de830cc3,b\f\bf4906a827dbc35ff22713007807f9c96ac42267
-Å
 Q.idea/sonarlint/securityhotspotstore/6/c/6c3d9386db9bde9abe57a15aa1dfb732ee1670f6,d\f\df7a4f266deee69711bfdaa5fc91b1ca39086262
 ]
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
+ç
+]CadastroPratos/src/main/java/Projeto/CadastroPratos/model/response/RetornoPratosResponse.java,b\4\b43ecc6e316049b86903a93d65a933017904f7f9
+Ñ
+TCadastroPratos/src/main/java/Projeto/CadastroPratos/controller/PratosController.java,a\3\a332b783eabeffec65ab1d21d346bc972c473c57

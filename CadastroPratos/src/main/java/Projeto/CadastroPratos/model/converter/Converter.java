@@ -4,7 +4,7 @@ import Projeto.CadastroPratos.model.dto.CadastroPratosDto;
 import Projeto.CadastroPratos.model.dto.RetornoDto;
 import Projeto.CadastroPratos.model.entitie.CadastroPratoEntity;
 import Projeto.CadastroPratos.model.request.CadastroPratosRequest;
-import Projeto.CadastroPratos.model.response.CadastroRetornoPratosResponse;
+import Projeto.CadastroPratos.model.response.RetornoPratosResponse;
 import org.springframework.stereotype.Component;
 
 @Component
@@ -16,8 +16,8 @@ public class Converter {
                 , cadastroPratosRequest.getPais());
     }
 
-    public static CadastroRetornoPratosResponse cadastroRetornoPratosDtoToResponse(RetornoDto retornoDto){
-        return new CadastroRetornoPratosResponse(retornoDto.getId(), retornoDto.getPrato(), retornoDto.getPais());
+    public static RetornoPratosResponse cadastroRetornoPratosDtoToResponse(RetornoDto retornoDto){
+        return new RetornoPratosResponse(retornoDto.getId(), retornoDto.getPrato(), retornoDto.getPais());
     }
 
 
