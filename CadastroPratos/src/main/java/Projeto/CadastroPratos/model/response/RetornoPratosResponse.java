@@ -1,32 +1,19 @@
-package Projeto.CadastroPratos.model.entitie;
+package Projeto.CadastroPratos.model.response;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
-
-
-@Entity
+@Data
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-@Table(name = "cadastro_prato")
-public class CadastroPratoEntity {
+public class RetornoPratosResponse {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     @JsonProperty("Prato")
-    @Column(name = "Prato")
     private String prato;
-
     @JsonProperty("Pais")
-    @Column(name ="Pais")
     private String pais;
-
 
 }
