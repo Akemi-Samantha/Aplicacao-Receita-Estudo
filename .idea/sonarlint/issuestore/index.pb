@@ -41,3 +41,17 @@ Q.idea/sonarlint/securityhotspotstore/6/c/6c3d9386db9bde9abe57a15aa1dfb732ee1670
 ]CadastroPratos/src/main/java/Projeto/CadastroPratos/model/response/RetornoPratosResponse.java,b\4\b43ecc6e316049b86903a93d65a933017904f7f9
 „
 TCadastroPratos/src/main/java/Projeto/CadastroPratos/controller/PratosController.java,a\3\a332b783eabeffec65ab1d21d346bc972c473c57
+ˆ
+XCadastroPratos/src/test/java/Projeto/CadastroPratos/controller/PratosControllerTest.java,5\0\50c74d8b0b9d8dcb20ffed9d4879eb412d916717
+Š
+ZCadastroPratos/src/test/java/Projeto/CadastroPratos/service/CadastroPratosServiceTest.java,9\e\9e343f34beb6ed59d138b51433924d6eca9bb7d2
+€
+PCadastroPratos/src/main/java/Projeto/CadastroPratos/exception/ErrorNotFound.java,0\c\0caab4887f72e5e3c858b9653362d5bae0a629a2
+‚
+RCadastroPratos/src/main/java/Projeto/CadastroPratos/exception/ErrorBadRequest.java,4\b\4beebc17e90c7f70d0c2334e1a24baeb4a3b2e3a
+„
+TCadastroPratos/src/main/java/Projeto/CadastroPratos/exception/ResponseException.java,c\4\c4a7c5a8aed7044d72a83b56c25e85187bd09af7
+…
+UCadastroPratos/src/main/java/Projeto/CadastroPratos/exception/ResponseExceptions.java,3\9\39e66c4787701d026a6f41df84ea763f32a887ce
+‚
+RCadastroPratos/src/main/java/Projeto/CadastroPratos/handler/HandlerController.java,8\5\85bbf2ef1b7a9e94e3bb14e9e13906c0490f23ae

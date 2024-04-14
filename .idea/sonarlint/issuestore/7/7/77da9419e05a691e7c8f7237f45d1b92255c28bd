@@ -1,4 +1,6 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒÀ†üÿÿÿÿ8ÅÏ·–í1J$2f8e4b36-17dc-488f-beae-96ded4f3a17b
+p
+java:S1192%"SDefine a constant instead of duplicating this literal "Id nÃ£o encontrado" 3 times.(¨ÅôÏ8†«İÙí1
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒÀ†üÿÿÿÿ8Ú¦Øí1J$f41eca90-f831-4a30-b28d-eb64cd68a068
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÊÏ·–í1J$6bd781d3-8e72-42bc-bdd2-06c1a6c0b41c
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8î¦Øí1J$984f1b9f-9d82-4332-9908-20d2c9477691

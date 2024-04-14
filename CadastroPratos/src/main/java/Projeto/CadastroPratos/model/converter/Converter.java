@@ -7,6 +7,9 @@ import Projeto.CadastroPratos.model.request.CadastroPratosRequest;
 import Projeto.CadastroPratos.model.response.RetornoPratosResponse;
 import org.springframework.stereotype.Component;
 
+import java.util.List;
+import java.util.stream.Collectors;
+
 @Component
 public class Converter {
 
@@ -16,7 +19,7 @@ public class Converter {
                 , cadastroPratosRequest.getPais());
     }
 
-    public static RetornoPratosResponse cadastroRetornoPratosDtoToResponse(RetornoDto retornoDto){
+    public static RetornoPratosResponse retornoPratosDtoToResponse(RetornoDto retornoDto){
         return new RetornoPratosResponse(retornoDto.getId(), retornoDto.getPrato(), retornoDto.getPais());
     }
 
@@ -30,6 +33,11 @@ public class Converter {
     }
 
 
+    public static List<RetornoPratosResponse> retornoPratosDtoToResponseList(List<RetornoDto> retornoDto) {
+        return retornoDto.stream().map(Converter::retornoPratosDtoToResponse).collect(Collectors.toList());
+    }
 
-
+    public static List<RetornoDto> entityToRetornoDtoList(List<CadastroPratoEntity> cadastroPratoEntity) {
+        return cadastroPratoEntity.stream().map(Converter::entityToRetornoDto).collect(Collectors.toList());
+    }
 }
