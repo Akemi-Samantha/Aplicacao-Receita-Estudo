@@ -2,17 +2,18 @@ package Projeto.CadastroPratos.model.entitie;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+
+import javax.persistence.*;
 
 
 @Entity
 @AllArgsConstructor
 @NoArgsConstructor
 @Data
-@Table(name = "tb_market_data")
+@Table(name = "cadastro_prato")
 public class CadastroPratoEntity {
 
     @Id
@@ -26,4 +27,6 @@ public class CadastroPratoEntity {
     @JsonProperty("Pais")
     @Column(name ="Pais")
     private String pais;
+
+
 }
