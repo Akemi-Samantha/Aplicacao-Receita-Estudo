@@ -41,3 +41,7 @@ Q.idea/sonarlint/securityhotspotstore/6/c/6c3d9386db9bde9abe57a15aa1dfb732ee1670
 ]CadastroPratos/src/main/java/Projeto/CadastroPratos/model/response/RetornoPratosResponse.java,b\4\b43ecc6e316049b86903a93d65a933017904f7f9
 „
 TCadastroPratos/src/main/java/Projeto/CadastroPratos/controller/PratosController.java,a\3\a332b783eabeffec65ab1d21d346bc972c473c57
+ˆ
+XCadastroPratos/src/test/java/Projeto/CadastroPratos/controller/PratosControllerTest.java,5\0\50c74d8b0b9d8dcb20ffed9d4879eb412d916717
+Š
+ZCadastroPratos/src/test/java/Projeto/CadastroPratos/service/CadastroPratosServiceTest.java,9\e\9e343f34beb6ed59d138b51433924d6eca9bb7d2
