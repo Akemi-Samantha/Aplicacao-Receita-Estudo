@@ -50,9 +50,8 @@ public class PratosController {
     }
 
     @DeleteMapping("/deletarPrato/{id}")
-    public RetornoPratosResponse deletarPrato(@PathVariable Long id){
-        RetornoDto retornoDto = cadastroPratosService.deletarPrato(id);
-        return Converter.retornoPratosDtoToResponse(retornoDto);
+    public void deletarPrato(@PathVariable Long id){
+         cadastroPratosService.deletarPrato(id);
     }
 
 

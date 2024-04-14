@@ -1,10 +1,6 @@
 
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒÀ†üÿÿÿÿ8ÅÏ·–í1J$9345a525-3bfa-4da6-9d27-3554f86a993c
-˜
-java:S3655/"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(€§öüÿÿÿÿ8¢ÏåÍí1J$b33e6a2c-3007-4449-93f6-3fd2ee1c4b6f
-˜
-java:S3655)"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(€§öüÿÿÿÿ8ş×íÍí1J$603f486d-f796-4e7a-9d19-45d307f52f72
-˜
-java:S3655"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(€§öüÿÿÿÿ8¥íìÍí1J$67074d20-553c-47e3-a2bd-797713285fb6
+p
+java:S1192%"SDefine a constant instead of duplicating this literal "Id nÃ£o encontrado" 3 times.(¨ÅôÏ8†«İÙí1
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒÀ†üÿÿÿÿ8Ú¦Øí1J$f41eca90-f831-4a30-b28d-eb64cd68a068
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8ÊÏ·–í1J$e6442bc7-e60d-4930-a924-b5aa499b27a8
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8î¦Øí1J$984f1b9f-9d82-4332-9908-20d2c9477691

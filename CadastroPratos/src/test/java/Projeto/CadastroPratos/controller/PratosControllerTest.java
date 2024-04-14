@@ -92,12 +92,9 @@ class PratosControllerTest {
 
     @Test
     void deletarPrato() {
-        Mockito.when(cadastroPratosService.deletarPrato(1L)).thenReturn(Converter.entityToRetornoDto(cadastroPratoEntity));
-        RetornoPratosResponse retornoPratosResponse = pratosController.deletarPrato(1L);
-        Assertions.assertNotNull(retornoPratosResponse);
-        Assertions.assertEquals(cadastroPratoEntity.getId(), retornoPratosResponse.getId());
-        Assertions.assertEquals(cadastroPratoEntity.getPrato(), retornoPratosResponse.getPrato());
-        Assertions.assertEquals(cadastroPratoEntity.getPais(), retornoPratosResponse.getPais());
+        pratosController.deletarPrato(1L);
+        Mockito.verify(cadastroPratosService, Mockito.times(1)).deletarPrato(1L);
+
     }
 
 
