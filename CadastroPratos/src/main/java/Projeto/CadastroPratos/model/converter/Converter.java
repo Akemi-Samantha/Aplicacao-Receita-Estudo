@@ -40,4 +40,5 @@ public class Converter {
     public static List<RetornoDto> entityToRetornoDtoList(List<CadastroPratoEntity> cadastroPratoEntity) {
         return cadastroPratoEntity.stream().map(Converter::entityToRetornoDto).collect(Collectors.toList());
     }
+
 }

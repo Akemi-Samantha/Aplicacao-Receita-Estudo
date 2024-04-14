@@ -1,6 +1,8 @@
 
-p
-java:S1192%"SDefine a constant instead of duplicating this literal "Id nÃ£o encontrado" 3 times.(¨ÅôÏ8†«İÙí1
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒÀ†üÿÿÿÿ8Ú¦Øí1J$f41eca90-f831-4a30-b28d-eb64cd68a068
+–
+java:S1192&"SDefine a constant instead of duplicating this literal "Id nÃ£o encontrado" 3 times.(¨ÅôÏ8•ïÚí1J$287c8b10-24f7-44c3-946b-54f19ae4ee38
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒÀ†üÿÿÿÿ8Ú¦Øí1J$909d61d8-ca8c-4f7c-9fc5-236b48e67a14
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8î¦Øí1J$984f1b9f-9d82-4332-9908-20d2c9477691
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8­ïÚí1J$2c2a563f-b593-4050-82f7-ae567826fb29
+€
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8¦¦÷îí1J$df83b22e-4d43-4b5b-9843-72d42ab1fc8c

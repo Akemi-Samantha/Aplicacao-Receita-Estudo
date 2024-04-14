@@ -49,8 +49,6 @@ ZCadastroPratos/src/test/java/Projeto/CadastroPratos/service/CadastroPratosServi
 PCadastroPratos/src/main/java/Projeto/CadastroPratos/exception/ErrorNotFound.java,0\c\0caab4887f72e5e3c858b9653362d5bae0a629a2
 ‚
 RCadastroPratos/src/main/java/Projeto/CadastroPratos/exception/ErrorBadRequest.java,4\b\4beebc17e90c7f70d0c2334e1a24baeb4a3b2e3a
-„
-TCadastroPratos/src/main/java/Projeto/CadastroPratos/exception/ResponseException.java,c\4\c4a7c5a8aed7044d72a83b56c25e85187bd09af7
 …
 UCadastroPratos/src/main/java/Projeto/CadastroPratos/exception/ResponseExceptions.java,3\9\39e66c4787701d026a6f41df84ea763f32a887ce
 ‚

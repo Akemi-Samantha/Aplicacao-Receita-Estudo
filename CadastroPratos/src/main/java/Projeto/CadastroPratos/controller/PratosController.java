@@ -31,6 +31,7 @@ public class PratosController {
         return Converter.retornoPratosDtoToResponse(retornoDto);
     }
 
+
     @PutMapping("/atualizarPrato/{id}")
     public RetornoPratosResponse atualizarPrato(@PathVariable Long id, @RequestBody CadastroPratosRequest cadastroPratosRequest){
         RetornoDto retornoDto = cadastroPratosService.atualizarPrato(id, Converter.requestToDto(cadastroPratosRequest));
