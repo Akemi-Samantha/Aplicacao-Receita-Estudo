@@ -1,6 +1,18 @@
 version: '3.8'
 
 services:
+  mysql:
+    image: mysql:5.7
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: morangogostosinho123#
+      MYSQL_DATABASE: cadastroreceita
+
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql-data:/var/lib/mysql
+
   rabbitmq:
     image: rabbitmq:3-management
     container_name: rabbitmq
@@ -12,20 +24,24 @@ services:
       RABBITMQ_DEFAULT_PASS: guest
 
   cadastropratos:
-    build: ./CadastroPratos
+    build: .
     container_name: cadastropratos
     ports:
       - "8081:8081"
     depends_on:
       - rabbitmq
+      - mysql
     environment:
       SPRING_RABBITMQ_HOST: rabbitmq
       SPRING_RABBITMQ_PORT: 5672
       SPRING_RABBITMQ_USERNAME: guest
       SPRING_RABBITMQ_PASSWORD: guest
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/cadastroreceita
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: morangogostosinho123#
 
   clienteprojeto:
-    build: ../ClienteProjeto
+    build: .
     container_name: clienteprojeto
     ports:
       - "8080:8080"
@@ -36,3 +52,6 @@ services:
       SPRING_RABBITMQ_PORT: 5672
       SPRING_RABBITMQ_USERNAME: guest
       SPRING_RABBITMQ_PASSWORD: guest
+
+volumes:
+  mysql-data:
