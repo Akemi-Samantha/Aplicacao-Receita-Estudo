@@ -35,26 +35,4 @@ public class RabbitMQConfig {
         return BindingBuilder.bind(queue).to(exchange).with(routingKey);
     }
 
-    /*
-    public static final String QUEUE_NAME = "cadastroPratosQueue";
-    public static final String EXCHANGE_NAME = "cadastroPratosExchange";
-    public static final String ROUTING_KEY = "pratos.#";
-
-
-    @Bean
-    Queue queue() {
-        return new Queue(QUEUE_NAME, true);
-    }
-
-    @Bean
-    TopicExchange exchange() {
-        return new TopicExchange(EXCHANGE_NAME);
-    }
-
-    @Bean
-    Binding binding(Queue queue, TopicExchange exchange) {
-        return BindingBuilder.bind(queue).to(exchange).with(ROUTING_KEY);
-    }
-
-     */
 }
