@@ -18,8 +18,7 @@ public class CadastroPratosService {
     @Autowired
     private CadastroPratoRepository cadastroPratoRepository;
 
-    @Autowired
-    private PratoMessageSender pratoMessageSender;
+
 
     public RetornoDto cadastrarPratos(CadastroPratosDto cadastroPratosDto) {
         if (cadastroPratosDto.getPrato() == null || cadastroPratosDto.getPais() == null) {
@@ -27,10 +26,7 @@ public class CadastroPratosService {
         }
         CadastroPratoEntity cadastroPratoEntity = Converter.entityToCadastroDto(cadastroPratosDto);
         cadastroPratoRepository.save(cadastroPratoEntity);
-        pratoMessageSender.enviarPratoCriado(cadastroPratoEntity.getPrato());
         return Converter.entityToRetornoDto(cadastroPratoEntity);
-
-
     }
 
     public RetornoDto atualizarPrato(Long id, CadastroPratosDto cadastroPratosDto) {
@@ -42,7 +38,6 @@ public class CadastroPratosService {
         cadastroPratoEntity.setPrato(cadastroPratosDto.getPrato());
         cadastroPratoEntity.setPais(cadastroPratosDto.getPais());
         cadastroPratoRepository.save(cadastroPratoEntity);
-        pratoMessageSender.enviarPratoAtualizado(cadastroPratoEntity.getPrato());
         return Converter.entityToRetornoDto(cadastroPratoEntity);
     }
 
@@ -65,6 +60,5 @@ public class CadastroPratosService {
         CadastroPratoEntity cadastroPratoEntity = cadastroPratoRepository.findById(id)
                 .orElseThrow(() -> new ErrorNotFound("Id não encontrado"));
         cadastroPratoRepository.delete(cadastroPratoEntity);
-        pratoMessageSender.enviarPratoDeletado(cadastroPratoEntity.getPrato());
     }
 }
