@@ -1,6 +1,6 @@
 
 –
-java:S1192%"SDefine a constant instead of duplicating this literal "Id nÃ£o encontrado" 3 times.(¨ÅôÏ8‹Ú×ºğ1J$5b03fe94-707d-408a-903e-0c41bd31e918
-¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒÀ†üÿÿÿÿ8Ú×ºğ1J$fb834d51-b96c-4bc6-b44b-bb418c0cfb5a
+java:S1192%"SDefine a constant instead of duplicating this literal "Id nÃ£o encontrado" 3 times.(¨ÅôÏ8‹Ú×ºğ1J$b331bffc-f727-4c10-8633-e268aea182f7
+¡	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÒÀ†üÿÿÿÿ8Ú×ºğ1J$e2de6478-e544-40f4-976a-5d3886a7b5aa
 …
-java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¼Ú×ºğ1J$cb0aac50-7f4a-48b0-a6b6-a0e65e641d76
+java:S6813"BRemove this field injection and use constructor injection instead.(êæÄŞ8¼Ú×ºğ1J$530ebfd2-42ab-48dc-b493-ccf195e77945

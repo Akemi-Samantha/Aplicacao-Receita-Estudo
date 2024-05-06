@@ -10,8 +10,8 @@ import org.springframework.stereotype.Component;
 @Component
 public class PratoMenssagemSubscribe {
 
-    @RabbitListener(queues = "${rabbit.queue.name}")
-    public void receiveMessage( String jsonPayload) {
+    @RabbitListener(queues = "${rabbit.queue.name.cadastro}")
+    public void receiveMessage(String jsonPayload) {
         try {
             ObjectMapper mapper = new ObjectMapper();
             mapper.readValue(jsonPayload, CadastroPratosDto.class);
@@ -19,4 +19,25 @@ public class PratoMenssagemSubscribe {
             e.printStackTrace();
         }
     }
+
+    @RabbitListener(queues = "${rabbit.queue.name.atualizacao}")
+    public void receiveMessageAtualizacao(String jsonPayload) {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.readValue(jsonPayload, CadastroPratosDto.class);
+        } catch (JsonProcessingException e) {
+            e.printStackTrace();
+        }
+    }
+
+    @RabbitListener(queues = "${rabbit.queue.name.deletar}")
+    public void receiveMessageDeletar(String jsonPayload) {
+        try {
+            ObjectMapper mapper = new ObjectMapper();
+            mapper.readValue(jsonPayload, CadastroPratosDto.class);
+        }catch (JsonProcessingException e){
+            e.printStackTrace();
+        }
+    }
+
 }
