@@ -1,6 +1,6 @@
 # Etapa de build
 # Usar a imagem oficial do Maven para compilar o código fonte
-FROM maven:3.8.4-openjdk-11 as builder
+FROM maven:3.8.4-openjdk-11 AS builder
 
 # Copiar o código fonte para o contêiner de build
 COPY src /usr/src/app/src
@@ -10,7 +10,7 @@ COPY pom.xml /usr/src/app
 WORKDIR /usr/src/app
 
 # Executar o Maven build
-RUN mvn clean package
+RUN mvn clean install
 
 # Etapa de execução
 # Usar a imagem base do Java (JDK) para a execução
