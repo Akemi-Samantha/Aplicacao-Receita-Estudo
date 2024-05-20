@@ -1,36 +1,27 @@
 # Etapa de build
-# Usar a imagem oficial do Maven para compilar o código fonte
 FROM maven:3.8.4-openjdk-11 AS builder
 
-# Copiar o código fonte para o contêiner de build
-COPY src /usr/src/app/src
-COPY pom.xml /usr/src/app
+# Define the working directory in the container
+WORKDIR /app
 
-# Definir o diretório de trabalho para o diretório onde o código fonte foi copiado
-WORKDIR /usr/src/app
+# Copy the source code and the pom.xml file into the container
+COPY src /app/src
+COPY pom.xml /app
 
-# Executar o Maven build
-RUN mvn clean install
+# Run Maven build
+RUN mvn clean package -DskipTests
 
 # Etapa de execução
-# Usar a imagem base do Java (JDK) para a execução
 FROM openjdk:11
 
-# Copiar o artefato do build da etapa anterior para o contêiner de execução
-COPY --from=builder /usr/src/app/target/*.jar /app.jar
+# Define the working directory in the container
+WORKDIR /app
 
-# Comando para executar a aplicação
+# Copy the built jar file from the builder stage into the container
+# Make sure the path matches the location where the jar file is created
+COPY --from=builder /app/target/*.jar /app.jar
+
+# Command to run the application
 ENTRYPOINT ["java","-jar","/app.jar"]
 
 
-## Usar a imagem base do Java (JDK)
-#FROM openjdk:11
-#
-## Argumento para passar a versão do artefato
-#ARG JAR_FILE=target/*.jar
-#
-## Copiar o artefato do build para o contêiner
-#COPY ${JAR_FILE} app.jar
-#
-## Comando para executar a aplicação
-#ENTRYPOINT ["java","-jar","/app.jar"]
