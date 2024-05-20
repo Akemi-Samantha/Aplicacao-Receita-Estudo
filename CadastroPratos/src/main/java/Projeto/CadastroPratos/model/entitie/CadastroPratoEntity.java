@@ -23,11 +23,11 @@ public class CadastroPratoEntity {
     private Long id;
 
     @JsonProperty("Prato")
-    @Column(name = "Prato")
+    @Column(name = "prato")
     private String prato;
 
     @JsonProperty("Pais")
-    @Column(name ="Pais")
+    @Column(name ="pais")
     private String pais;
 
 
