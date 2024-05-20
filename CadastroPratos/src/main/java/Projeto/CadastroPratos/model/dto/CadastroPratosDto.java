@@ -1,5 +1,6 @@
 package Projeto.CadastroPratos.model.dto;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,8 +10,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class CadastroPratosDto {
 
+    @JsonProperty("Prato")
     private String prato;
-    private String pais;
+
+    @JsonProperty("Pais")
+    private String pais;;
 
 
 }

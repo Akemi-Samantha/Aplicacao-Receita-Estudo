@@ -18,6 +18,8 @@ public class CadastroPratosService {
     @Autowired
     private CadastroPratoRepository cadastroPratoRepository;
 
+
+
     public RetornoDto cadastrarPratos(CadastroPratosDto cadastroPratosDto) {
         if (cadastroPratosDto.getPrato() == null || cadastroPratosDto.getPais() == null) {
             throw new ErrorBadRequest("Os campos prato e pais são obrigatórios");
@@ -25,8 +27,6 @@ public class CadastroPratosService {
         CadastroPratoEntity cadastroPratoEntity = Converter.entityToCadastroDto(cadastroPratosDto);
         cadastroPratoRepository.save(cadastroPratoEntity);
         return Converter.entityToRetornoDto(cadastroPratoEntity);
-
-
     }
 
     public RetornoDto atualizarPrato(Long id, CadastroPratosDto cadastroPratosDto) {
